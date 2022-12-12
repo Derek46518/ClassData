@@ -1,0 +1,10 @@
+#畫出一個地鼠
+    screen.blit(mole,(120,50))
+    # 取得槌子的矩形範圍
+    mallet_position = mallet.get_rect()
+    # 將槌子的中心點設在滑鼠點的位置
+    mallet_position.center = pygame.mouse.get_pos()
+    if pygame.mouse.get_pressed()[0]:
+         screen.blit(down_mallet, mallet_position)
+    else:
+         screen.blit(mallet, mallet_position)

@@ -1,0 +1,6 @@
+if state == 0:#還沒開始的畫面
+            welcome_screen()
+        elif state == 1:#遊戲中的畫面
+            play_screen()
+        elif state == 2:#遊戲結束的畫面
+            end_screen()

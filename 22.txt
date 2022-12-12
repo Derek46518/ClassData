@@ -1,0 +1,8 @@
+# 取得滑鼠當前的位置
+   mx, my = pygame.mouse.get_pos()
+   # 取得老鼠的寬及高
+   width, height = mole.get_size()
+   # 將座標計算是不是點擊在老鼠的圖片上, 如果有的話要加分和產生下一隻新的
+   if isInRect((mx,my),(x,y,width,height)):
+       score += 1
+       new_mole()

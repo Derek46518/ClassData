@@ -1,0 +1,3 @@
+# x 從螢幕最左到右邊扣掉老鼠的寬都能取, y 則向下移 30 到底部扣掉老鼠的高都能取
+   x = randint(0, SCREEN_WIDTH - mole.get_width())
+   y = randint(30, SCREEN_HEIGHT - mole.get_height())
